@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VÉ TẾT</title>
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg py-0">
+      <div class="container-xxl">
+        <a class="navbar-brand py-0" href="#"><img src="img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto ms-4 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hovPink" href="#">Danh sách vé</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hovPink" href="#">Tin tức</a>
+            </li>
+          </ul>
+          <a href="#" class="btn borPink text-pink fs-14">Tra cứu thông tin vé</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="homepage">
+    <section class="my-0">
+      <div class="banner">
+        <div class="container-xxl">
+          <h2 class="text-white">Bình ổn giá vé về quê ăn tết AN VUI !</h2>
+          <div class="my-5">
+            <div class="d-flex mb-2">
+              <div class="form-check me-4 d-flex align-items-center">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label text-white ms-2" for="flexRadioDefault2">
+                  Vé xe khách
+                </label>
+              </div>
+              <div class="form-check me-4 d-flex align-items-center">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label text-white ms-2" for="flexRadioDefault1">
+                  Vé tàu
+                </label>
+              </div>
+              <div class="form-check d-flex align-items-center">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label text-white ms-2" for="flexRadioDefault1">
+                  Vé máy bay
+                </label>
+              </div>
+            </div>
+            <div class="input-group book my-4">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle startbut bg-white text-secondary" type="button"
+                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="img/bus.png" alt="" class="me-2"> Nơi đi
+                </button>
+                <div class="dropdown-menu py-3">
+                  <p class="mb-0 px-3">Hà Nội</p>
+                  <ul class="list-unstyled mb-0" aria-labelledby="dropdownMenuButton1">
+                    <li class="dropdown-item px-4 text-secondary">Bến xe Mỹ Đình</li>
+                    <li class="dropdown-item px-4 text-secondary">Bến xe Nước Ngầm</li>
+                    <li class="dropdown-item px-4 text-secondary">Bến xe Lương Yên</li>
+                  </ul>
+                  <p class="mb-0 px-3">Nghệ An</p>
+                  <ul class="list-unstyled mb-0" aria-labelledby="dropdownMenuButton1">
+                    <li class="dropdown-item px-4 text-secondary">Bến xe Vinh</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bg-white d-flex align-items-center lineCir position-relative">
+                <i class="fa-solid fa-right-left p-2 mx-1 bg-grey rounded-circle"></i>
+              </div>
+              <span class="input-group-text bg-white"><img src="img/location.png" alt="" class="mx-2"></span>
+              <input type="text" class="form-control" placeholder="Nơi đến" aria-label="Server">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle startbut bg-white text-secondary rounded-0 lineLeft position-relative  " type="button"
+                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="img/calendar.png" alt="" class="mx-2"> Nơi đi
+                </button>
+                <div class="dropdown-menu py-3">
+                  <div class="calendar"></div>
+                </div>
+              </div>
+              <!-- <span class="input-group-text bg-white position-relative"><img src="img/calendar.png" alt="" class="mx-2"></span>
+              <input type="text" class="form-control" placeholder="Date" aria-label="Server"> -->
+              <span class="input-group-text bgpinkDark text-white px-4 leftbor">VỀ NHÀ ĂN TẾT!</span>
+            </div>
+            <div class="form-check mt-2 d-flex align-items-center">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label text-white ms-2" for="flexCheckDefault">
+                Khứ hồi
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-xxl">
+        <div class="row topvc">
+          <div class="col-md-4">
+            <div class="vourcher position-relative px-4 text-white">
+              <p class="fs-4 mb-0">VÉ GIÁ RẺ</p>
+              <p class="fs-2">SUM HỌP GIA ĐÌNH</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="vourcher vc2 position-relative px-4 text-white">
+              <p class="fs-3 mb-0">VÉ XE TẾT <br>ƯU ĐÃI</p>
+              <p class="fs-80 lh-text">50%</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="vourcher vc3 position-relative px-4 text-white">
+              <p class="fs-56 lh-text text-end">GIÁ RẺ</p>
+              <p class="fs-3 mb-0 text-end">ƯU ĐÃI RIÊNG <br>HỌC SINH, SINH VIÊN</p>
+            </div>
+          </div>
+        </div>
+        <div class="tower my-5">
+          <div class="row">
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+              <div class="bg-pink p-2 d-inline-block rounded-circle dashpink position-relative">
+                <div class="d-inline-block bg-white rounded-circle p-3">
+                  <img src="img/busfind.png" alt="">
+                </div>
+              </div>
+              <div class="ms-2">
+                <h5>TÌM KIẾM</h5>
+                <p class="text-secondary mb-0">Chọn chuyến đi phù hợp</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+              <div class="bg-pink p-2 d-inline-block rounded-circle dashpink position-relative">
+                <div class="d-inline-block bg-white rounded-circle p-3">
+                  <img src="img/ticket.png" alt="">
+                </div>
+              </div>
+              <div class="ms-2">
+                <h5>ĐẶT VÉ</h5>
+                <p class="text-secondary mb-0">Chọn chỗ & thanh toán</p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+              <div class="bg-pink p-2 d-inline-block rounded-circle dashpink position-relative">
+                <div class="d-inline-block bg-white rounded-circle p-3">
+                  <img src="img/roadnone.png" alt="">
+                </div>
+              </div>
+              <div class="ms-2">
+                <h5>ĐI AN VỀ VUI</h5>
+                <p class="text-secondary mb-0">Trải nghiệm hành trình</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tour">
+      <div class="container-xxl">
+        <div class="d-flex justify-content-between align-items-center border-bottom pb-2">
+          <h4 class="mb-0 ms-3 dashort position-relative">Các tuyến nổi bật</h4>
+          <p class="fs-14 text-pink mb-0">Xem tất cả</p>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <div class="position-relative mb-4">
+              <img src="img/tour-1.png" alt="" width="100%">
+              <h4 class="text-white position-absolute bottom-0 m-4">HÀ NỘI - LÀO CAI, SAPA</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="position-relative mb-4">
+              <img src="img/tour-2.png" alt="" width="100%">
+              <h4 class="text-white position-absolute bottom-0 m-4">SÀI GÒN - LÂM ĐỒNG, ĐÀ LẠT</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="position-relative mb-4">
+              <img src="img/tour-3.png" alt="" width="100%">
+              <h4 class="text-white position-absolute bottom-0 m-4">HÀ NỘI - QUẢNG NINH, HẠ LONG</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="position-relative mb-4">
+              <img src="img/tour-4.png" alt="" width="100%">
+              <h4 class="text-white position-absolute bottom-0 m-4">SÀI GÒN - VŨNG TÀU</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="position-relative mb-4">
+              <img src="img/tour-5.png" alt="" width="100%">
+              <h4 class="text-white position-absolute bottom-0 m-4">HÀ NỘI - HẢI PHÒNG, ĐỒ SƠN</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="position-relative mb-4">
+              <img src="img/tour-6.png" alt="" width="100%">
+              <h4 class="text-white position-absolute bottom-0 m-4">SÀI GÒN - NHA TRANG</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="position-relative">
+              <img src="img/tour-7.png" alt="" width="100%">
+              <h4 class="text-white position-absolute bottom-0 m-4">HÀ NỘI - NGHỆ AN</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="position-relative">
+              <img src="img/tour-8.png" alt="" width="100%">
+              <h4 class="text-white position-absolute bottom-0 m-4">SÀI GÒN - MIỀN TÂY, KIÊN GIANG</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="firepink">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="d-inline-block bg-white rounded-circle p-4 dashborpink">
+              <img src="img/buspink.png" alt="">
+            </div>
+            <h5 class="mt-3 mb-0">HÃNG XE UY TÍN</h5>
+            <p class="mb-0 text-secondary">Chỉ cung cấp vé của các hãng xe uy tín trên thị trường</p>
+          </div>
+          <div class="col-md-4">
+            <div class="d-inline-block bg-white rounded-circle p-4 dashborpink">
+              <img src="img/ticketpink.png" alt="">
+            </div>
+            <h5 class="mt-3 mb-0">GIÁ VÉ BÌNH ỔN</h5>
+            <p class="mb-0 text-secondary">Giá vé xe được cam kết không tăng giá so với ngày thường cùng các chương
+              trình khuyến mãi hấp dẫn</p>
+          </div>
+          <div class="col-md-4">
+            <div class="d-inline-block bg-white rounded-circle p-4 dashborpink">
+              <img src="img/starpink.png" alt="">
+            </div>
+            <h5 class="mt-3 mb-0">ĐẢM BẢO CHẤT LƯỢNG</h5>
+            <p class="mb-0 text-secondary">Vé xe được mua qua Vetet.vn được nhà xe đảm bảo về chất lượng dịch vụ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="homebus">
+      <div class="container-xxl">
+        <div class="border-bottom pb-2">
+          <h4 class="mb-0 ms-3 dashort position-relative">Các nhà xe tham gia chương trình</h4>
+        </div>
+        <div class="swiper-container py-5">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/homebus-1.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/homebus-2.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/homebus-3.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/homebus-4.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/homebus-1.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/homebus-2.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/homebus-3.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/homebus-4.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/homebus-1.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/homebus-2.png" alt=""></div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev d-flex align-items-center"><i
+              class="fa-solid fa-chevron-left bg-white text-pink shadow-sm p-2 rounded-circle"></i></div>
+          <div class="swiper-button-next d-flex align-items-center"><i
+              class="fa-solid fa-chevron-right bg-white text-pink shadow-sm p-2 rounded-circle"></i></div>
+        </div>
+        <div class="border-bottom pb-2">
+          <h4 class="mb-0 ms-3 dashort position-relative">Chính sách mua vé cho khách hàng</h4>
+        </div>
+        <ul class="nav nav-pills py-4" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active text-pink rounded-3 p-2 me-2" id="pills-home-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+              aria-selected="true">Chính sách chung</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-pink borPink rounded-3 p-2 me-2" id="pills-profile-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+              aria-selected="false">Chính sách thu thập và bảo mật thông
+              tin khách hàng</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-pink borPink rounded-3 p-2 me-2" id="pills-contact-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+              aria-selected="false">Chính sách bảo mật thông tin thanh toán</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <ul class="list-unstyled">
+              <li>- Không được phép hoàn, huỷ, đổi vé.</li>
+              <li>- Thời gian mua vé hợp lệ là trước khi xe xuất bến ít nhất 24 giờ.</li>
+              <li>- Thời gian thanh toán hợp lệ là tối đa 8 phút kể từ khi đặt giữ chỗ.</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <ul class="list-unstyled">
+              <li>- Không được phép hoàn, huỷ, đổi vé.</li>
+              <li>- Thời gian mua vé hợp lệ là trước khi xe xuất bến ít nhất 24 giờ.</li>
+              <li>- Thời gian thanh toán hợp lệ là tối đa 8 phút kể từ khi đặt giữ chỗ.</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <ul class="list-unstyled">
+              <li>- Không được phép hoàn, huỷ, đổi vé.</li>
+              <li>- Thời gian mua vé hợp lệ là trước khi xe xuất bến ít nhất 24 giờ.</li>
+              <li>- Thời gian thanh toán hợp lệ là tối đa 8 phút kể từ khi đặt giữ chỗ.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="container-xxl">
+      <img src="img/logo.png" alt="" class="mt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-pink mb-2 mt-4">CÔNG TY CỔ PHẦN CÔNG NGHỆ ANVUI</p>
+          <p class="mb-2">Giấy chứng nhận ĐKKD số 0107003437 do Sở KH& ĐT TP. Hà Nội cấp lần đầu ngày 23/09/2015.</p>
+          <p class="mb-2"><span class="text-pink">Chi nhánh phía Bắc</span> <span>- Email: @anvui.vn - Điện thoại:
+              1900
+              1911 Ext 1</span></p>
+          <p class="mb-2">Địa chỉ: Toà Ecolife Capital, Số 58 Tố Hữu, Nam Từ Liêm, Hà Nội</p>
+          <p class="mb-2"><span class="text-pink">Chi nhánh phía Nam</span> <span>- Email: anvuihcm@anvui.vn - Điện
+              thoại: 1900 1911 Ext 2</span></p>
+          <p class="mb-2">Địa chỉ: J65 Lầu 6, Toà nhà Sinh Lợi Plaza, KĐT Trung Sơn, Bình Chánh, Hồ Chí Minh</p>
+          <p class="mb-4">Hotline: 024.9999.6666</p>
+        </div>
+        <div class="col-md-6">
+          <p>Đăng ký cung cấp vé Tết</p>
+          <div class="d-flex">
+            <input type="text" class="form-control" placeholder="Số điện thoại hoặc email liên hệ" aria-label="Username"
+              aria-describedby="basic-addon1">
+            <button type="button" class="btn bg-white text-pink borPink ms-2">Đăng ký</button>
+          </div>
+        </div>
+      </div>
+      <p class="border-top pt-3">Phương thức thanh toán</p>
+      <ul class="list-unstyled d-flex pb-4">
+        <li><a href="#" class="me-5"><img src="img/vnpay.png" alt=""></a></li>
+        <li><a href="#" class="me-5"><img src="img/zalopay.png" alt=""></a></li>
+        <li><a href="#" class="me-5"><img src="img/viettelpay.png" alt=""></a></li>
+        <li><a href="#" class="me-5"><img src="img/visa.png" alt=""></a></li>
+        <li><a href="#"><img src="img/mastercard.png" alt=""></a></li>
+      </ul>
+    </div>
+    <p class="bg-pink text-pink text-center py-2 mb-0">COPYRIGHT BY ANVUI - 2020</p>
+  </footer>
+  <script>
+    $(document).ready(function () {
+      // Swiper: Slider
+      new Swiper('.swiper-container', {
+        autoSlide: 5000,
+        loop: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 20,
+        breakpoints: {
+          1920: {
+            slidesPerView: 4,
+            spaceBetween: 0
+          },
+          1028: {
+            slidesPerView: 2,
+            spaceBetween: 0
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 0
+          }
+        }
+      });
+    });
+  </script>
+  <script>
+    function CalendarControl() {
+      const calendar = new Date();
+      const calendarControl = {
+        localDate: new Date(),
+        prevMonthLastDate: null,
+        calWeekDays: ["T2", "T3", "T4", "T5", "T6", "T7", "CN"],
+        calMonthName: [
+          "Tháng 1",
+          "Tháng 2",
+          "Tháng 3",
+          "Tháng 4",
+          "Tháng 5",
+          "Tháng 6",
+          "Tháng 7",
+          "Tháng 8",
+          "Tháng 9",
+          "Tháng 10",
+          "Tháng 11",
+          "Tháng 12"
+        ],
+        daysInMonth: function (month, year) {
+          return new Date(year, month, 0).getDate();
+        },
+        firstDay: function () {
+          return new Date(calendar.getFullYear(), calendar.getMonth(), 1);
+        },
+        lastDay: function () {
+          return new Date(calendar.getFullYear(), calendar.getMonth() + 1, 0);
+        },
+        firstDayNumber: function () {
+          return calendarControl.firstDay().getDay() + 1;
+        },
+        lastDayNumber: function () {
+          return calendarControl.lastDay().getDay() + 1;
+        },
+        getPreviousMonthLastDate: function () {
+          let lastDate = new Date(
+            calendar.getFullYear(),
+            calendar.getMonth(),
+            0
+          ).getDate();
+          return lastDate;
+        },
+        navigateToPreviousMonth: function () {
+          calendar.setMonth(calendar.getMonth() - 1);
+          calendarControl.attachEventsOnNextPrev();
+        },
+        navigateToNextMonth: function () {
+          calendar.setMonth(calendar.getMonth() + 1);
+          calendarControl.attachEventsOnNextPrev();
+        },
+        navigateToCurrentMonth: function () {
+          let currentMonth = calendarControl.localDate.getMonth();
+          let currentYear = calendarControl.localDate.getFullYear();
+          calendar.setMonth(currentMonth);
+          calendar.setYear(currentYear);
+          calendarControl.attachEventsOnNextPrev();
+        },
+        displayYear: function () {
+          let yearLabel = document.querySelector(".calendar .calendar-year-label");
+          yearLabel.innerHTML = calendar.getFullYear();
+        },
+        displayMonth: function () {
+          let monthLabel = document.querySelector(
+            ".calendar .calendar-month-label"
+          );
+          monthLabel.innerHTML = calendarControl.calMonthName[calendar.getMonth()];
+        },
+        selectDate: function (e) {
+          console.log(
+            `${e.target.textContent} ${calendarControl.calMonthName[calendar.getMonth()]
+            } ${calendar.getFullYear()}`
+          );
+        },
+        plotSelectors: function () {
+          document.querySelector(
+            ".calendar"
+          ).innerHTML += `<div class="calendar-inner">
+          <div class="calendar-controls">
+          <div class="calendar-prev"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><path fill="#666" d="M88.2 3.8L35.8 56.23 28 64l7.8 7.78 52.4 52.4 9.78-7.76L45.58 64l52.4-52.4z"/></svg></a></div>
+          <div>
+            <p class="text-secondary text-center mb-1">Chọn ngày đi</p>
+            <div class="calendar-year-month">
+            <div class="calendar-month-label"></div>
+            <div>-</div>
+            <div class="calendar-year-label"></div>
+          </div>
+          </div>
+          
+          <div class="calendar-next"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><path fill="#666" d="M38.8 124.2l52.4-52.42L99 64l-7.77-7.78-52.4-52.4-9.8 7.77L81.44 64 29 116.42z"/></svg></a></div>
+          </div>
+          
+          <div class="calendar-body"></div></div>`;
+        },
+        plotDayNames: function () {
+          for (let i = 0; i < calendarControl.calWeekDays.length; i++) {
+            document.querySelector(
+              ".calendar .calendar-body"
+            ).innerHTML += `<div>${calendarControl.calWeekDays[i]}</div>`;
+          }
+        },
+        plotDates: function () {
+          document.querySelector(".calendar .calendar-body").innerHTML = "";
+          calendarControl.plotDayNames();
+          calendarControl.displayMonth();
+          calendarControl.displayYear();
+          let count = 1;
+          let prevDateCount = 0;
+
+          calendarControl.prevMonthLastDate = calendarControl.getPreviousMonthLastDate();
+          let prevMonthDatesArray = [];
+          let calendarDays = calendarControl.daysInMonth(
+            calendar.getMonth() + 1,
+            calendar.getFullYear()
+          );
+          // dates of current month
+          for (let i = 1; i < calendarDays; i++) {
+            if (i < calendarControl.firstDayNumber()) {
+              prevDateCount += 1;
+              document.querySelector(
+                ".calendar .calendar-body"
+              ).innerHTML += `<div class="prev-dates"></div>`;
+              prevMonthDatesArray.push(calendarControl.prevMonthLastDate--);
+            } else {
+              document.querySelector(
+                ".calendar .calendar-body"
+              ).innerHTML += `<div class="number-item" data-num=${count}><a class="dateNumber" href="#">${count++}</a></div>`;
+            }
+          }
+          //remaining dates after month dates
+          for (let j = 0; j < prevDateCount + 1; j++) {
+            document.querySelector(
+              ".calendar .calendar-body"
+            ).innerHTML += `<div class="number-item" data-num=${count}><a class="dateNumber" href="#">${count++}</a></div>`;
+          }
+          calendarControl.highlightToday();
+          calendarControl.plotPrevMonthDates(prevMonthDatesArray);
+          calendarControl.plotNextMonthDates();
+        },
+        attachEvents: function () {
+          let prevBtn = document.querySelector(".calendar .calendar-prev a");
+          let nextBtn = document.querySelector(".calendar .calendar-next a");
+          let todayDate = document.querySelector(".calendar .calendar-today-date");
+          let dateNumber = document.querySelectorAll(".calendar .dateNumber");
+          prevBtn.addEventListener(
+            "click",
+            calendarControl.navigateToPreviousMonth
+          );
+          nextBtn.addEventListener("click", calendarControl.navigateToNextMonth);
+          todayDate.addEventListener(
+            "click",
+            calendarControl.navigateToCurrentMonth
+          );
+          for (var i = 0; i < dateNumber.length; i++) {
+            dateNumber[i].addEventListener(
+              "click",
+              calendarControl.selectDate,
+              false
+            );
+          }
+        },
+        highlightToday: function () {
+          let currentMonth = calendarControl.localDate.getMonth() + 1;
+          let changedMonth = calendar.getMonth() + 1;
+          let currentYear = calendarControl.localDate.getFullYear();
+          let changedYear = calendar.getFullYear();
+          if (
+            currentYear === changedYear &&
+            currentMonth === changedMonth &&
+            document.querySelectorAll(".number-item")
+          ) {
+            document
+              .querySelectorAll(".number-item")
+            [calendar.getDate() - 1].classList.add("calendar-today");
+          }
+        },
+        plotPrevMonthDates: function (dates) {
+          dates.reverse();
+          for (let i = 0; i < dates.length; i++) {
+            if (document.querySelectorAll(".prev-dates")) {
+              document.querySelectorAll(".prev-dates")[i].textContent = dates[i];
+            }
+          }
+        },
+        plotNextMonthDates: function () {
+          let childElemCount = document.querySelector('.calendar-body').childElementCount;
+          //7 lines
+          if (childElemCount > 42) {
+            let diff = 49 - childElemCount;
+            calendarControl.loopThroughNextDays(diff);
+          }
+
+          //6 lines
+          if (childElemCount > 35 && childElemCount <= 42) {
+            let diff = 42 - childElemCount;
+            calendarControl.loopThroughNextDays(42 - childElemCount);
+          }
+
+        },
+        loopThroughNextDays: function (count) {
+          if (count > 0) {
+            for (let i = 1; i <= count; i++) {
+              document.querySelector('.calendar-body').innerHTML += `<div class="next-dates">${i}</div>`;
+            }
+          }
+        },
+        attachEventsOnNextPrev: function () {
+          calendarControl.plotDates();
+          calendarControl.attachEvents();
+        },
+        init: function () {
+          calendarControl.plotSelectors();
+          calendarControl.plotDates();
+          calendarControl.attachEvents();
+        }
+      };
+      calendarControl.init();
+    }
+
+    const calendarControl = new CalendarControl();
+
+  </script>
+</body>
+
+</html>

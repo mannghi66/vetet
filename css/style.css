@@ -79,7 +79,15 @@ header .hovPink:hover {
 header .nav-link {
     padding: 22px 0;
 }
-
+header .modal-header {
+    border-bottom: 1px solid #dee2e600;
+}
+header .form-control:focus {
+    background-color: #F9FAFC;
+}
+header .form-control::placeholder {
+    color: #212529;
+}
 /* =====================================Footer===================================== */
 footer {
     background: #F9FAFC;
@@ -269,6 +277,13 @@ footer .btn {
 }
 #homepage .dropdown-toggle.startbut::after {
     display: none;
+}
+#homepage .dropdown-toggle.startbut.carlen::before {
+    position: absolute;
+    content: "";
+    background: #B0B5C1;
+    width: 1px;
+    height: 42px;
 }
 #homepage .book .dropdown-menu {
     width: 360px;
@@ -527,4 +542,92 @@ footer .btn {
 }
 .calendar-today .dateNumber {
     color: #fff !important;
+}
+.values {
+    padding: 20px 0;
+    display: flex;
+}
+.max-value {
+    margin-left: auto;
+}
+.min-value::after, .max-value::after {
+    position: absolute;
+    content: "đ";
+}
+.range-slider {
+    margin-top: 10px;
+    position: relative;
+}
+.slider-track {
+    width: 100%;
+    background: #ccc;
+    height: 4px;
+    position: relative;
+    overflow: hidden;
+}
+.slider-track-filled {
+    width: 100%;
+    background: #FF4868;
+    height: 4px;
+    position: absolute;
+    transform-origin: 0 0;
+}
+.min-thumb,
+.max-thumb {
+    width: 21px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+    user-select: none;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 21%) 0px 5px 15px;
+}
+.min-thumb {
+    left: 0;
+}
+.max-thumb {
+    right: 0;
+}
+@media (max-width: 820px) {
+    .m-0 {
+        margin: 0 !important;
+    }
+    .d-block-md {
+        display: block !important;
+    }
+    .mt-10 {
+        margin-top: 10px;
+    }
+    .mt-20 {
+        margin-top: 20px;
+    }
+    .truncated {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #homepage .startbut {
+        width: 180px;
+    }
+    #homepage .banner {
+        padding: 145px 0;
+    }
+    header .navbar-nav .nav-item {
+        margin: 0;
+    }
+    header .navbar-collapse {
+        margin-bottom: 12px;
+    }
+    #homepage .vourcher {
+        margin-bottom: 15px;
+    }
+    #homepage .nav-item {
+        margin-bottom: 10px;
+    }
+    #book .tick {
+        padding: 0;
+    }
 }

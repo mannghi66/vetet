@@ -23,7 +23,7 @@
 </head>
 <div id="book">
     <section class="info">
-        <div class="container list">
+        <div class="container-xxl list">
             <div class="row">
                 <div class="col-md-3">
                     <p class="fs-24">BỘ LỌC</p>
@@ -45,7 +45,20 @@
                         <span class="input-group-text bg-white me-2" id="basic-addon2"><img src="img/calendarbl.png"
                                 alt=""></span>
                     </div>
-                    <h6 class="text-pink border-top pt-3">GIÁ TIỀN</h6>
+                    <h6 class="text-pink border-top py-3">GIÁ TIỀN</h6>
+                    <div class="range">
+                        <div class="range-slider" data-min='0' data-max='150000' data-step="10">
+                            <div class="slider-track">
+                                <span class='slider-track-filled'></span>
+                            </div>
+                            <div class="min-thumb"></div>
+                            <div class="max-thumb"></div>
+                        </div>
+                    </div>
+                    <div class="values">
+                        <div class="min-value position-relative"></div>
+                        <div class="max-value"></div>
+                    </div>
                     <h6 class="text-pink border-top pt-3">KHỞI HÀNH</h6>
                     <div class="form-check mb-2">
                         <input class="form-check-input rounded-1" type="checkbox" value="" id="flexCheckDefault">
@@ -73,34 +86,309 @@
                     </div>
                     <h6 class="text-pink border-top pt-3">TIỆN NGHI</h6>
                     <div>
-                        <span class="text-pink borpinkdark d-inline-block px-2 py-1 rounded-1 mb-2"><img src="img/wifi.png"
-                                alt="" class="me-2">Wifi miễn phí</span>
+                        <span class="text-pink borpinkdark d-inline-block px-2 py-1 rounded-1 mb-2"><img
+                                src="img/wifi.png" alt="" class="me-2">Wifi miễn phí</span>
                     </div>
                     <div>
-                        <span class="grey-50 d-inline-block px-2 py-1 rounded-1 mb-2"><img src="img/light.png" class="me-2" alt="">Đèn đọc
+                        <span class="grey-50 d-inline-block px-2 py-1 rounded-1 mb-2"><img src="img/light.png"
+                                class="me-2" alt="">Đèn đọc
                             sách
                         </span>
                     </div>
                     <div>
-                        <span class="grey-50 d-inline-block px-2 py-1 rounded-1 mb-2"><img src="img/food.png" class="me-2" alt="">Ăn nhẹ
+                        <span class="grey-50 d-inline-block px-2 py-1 rounded-1 mb-2"><img src="img/food.png"
+                                class="me-2" alt="">Ăn nhẹ
                         </span>
                     </div>
                     <div>
-                        <span class="grey-50 d-inline-block px-2 py-1 rounded-1 mb-2"><img src="img/drink.png" class="me-2" alt="">Nước uống
+                        <span class="grey-50 d-inline-block px-2 py-1 rounded-1 mb-2"><img src="img/drink.png"
+                                class="me-2" alt="">Nước uống
                         </span>
                     </div>
                     <div>
-                        <span class="grey-50 d-inline-block px-2 py-1 rounded-1 mb-2"><img src="img/blanket.png" class="me-2" alt="">Chăn
+                        <span class="grey-50 d-inline-block px-2 py-1 rounded-1 mb-2"><img src="img/blanket.png"
+                                class="me-2" alt="">Chăn
                         </span>
                     </div>
                     <div>
-                        <span class="grey-50 d-inline-block px-2 py-1 rounded-1 mb-2"><img src="img/charge.png" class="me-2" alt="">Sạc pin
+                        <span class="grey-50 d-inline-block px-2 py-1 rounded-1 mb-2"><img src="img/charge.png"
+                                class="me-2" alt="">Sạc pin
                         </span>
                     </div>
+                </div>
+                <div class="col-md-9">
+                    <p class="fs-24">Có 23432 chuyến xe</p>
+                    <table class="table">
+                        <tr>
+                            <td>Tuyến xe</td>
+                            <td>Lịch trình</td>
+                            <td>Giá vé</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Hà Nội
+                                <img src="img/arrowright.png" alt="" class="mx-2">
+                                Nghệ An
+                            </td>
+                            <td>
+                                <p class="mb-1">07:00 - 23:00 (Giường)</p>
+                                <span class="text-secondary">25/11/2020</span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="text-green">180.000đ</span>
+                                    <div>
+                                        <span class="fs-14 me-3">6 ghế trống</span>
+                                        <button class="btn text-pink borPink" type="button">Đặt vé</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Hà Nội
+                                <img src="img/arrowright.png" alt="" class="mx-2">
+                                Nghệ An
+                            </td>
+                            <td>
+                                <p class="mb-1">07:00 - 23:00 (Giường)</p>
+                                <span class="text-secondary">25/11/2020</span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="text-green">180.000đ</span>
+                                    <div>
+                                        <span class="fs-14 me-3">6 ghế trống</span>
+                                        <button class="btn text-pink borPink" type="button">Đặt vé</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Hà Nội
+                                <img src="img/arrowright.png" alt="" class="mx-2">
+                                Nghệ An
+                            </td>
+                            <td>
+                                <p class="mb-1">07:00 - 23:00 (Giường)</p>
+                                <span class="text-secondary">25/11/2020</span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="text-green">180.000đ</span>
+                                    <div>
+                                        <span class="fs-14 me-3">6 ghế trống</span>
+                                        <button class="btn text-pink borPink" type="button">Đặt vé</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Hà Nội
+                                <img src="img/arrowright.png" alt="" class="mx-2">
+                                Nghệ An
+                            </td>
+                            <td>
+                                <p class="mb-1">07:00 - 23:00 (Giường)</p>
+                                <span class="text-secondary">25/11/2020</span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="text-green">180.000đ</span>
+                                    <div>
+                                        <span class="fs-14 me-3">6 ghế trống</span>
+                                        <button class="btn text-pink borPink" type="button">Đặt vé</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Hà Nội
+                                <img src="img/arrowright.png" alt="" class="mx-2">
+                                Nghệ An
+                            </td>
+                            <td>
+                                <p class="mb-1">07:00 - 23:00 (Giường)</p>
+                                <span class="text-secondary">25/11/2020</span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="text-green">180.000đ</span>
+                                    <div>
+                                        <span class="fs-14 me-3">6 ghế trống</span>
+                                        <button class="btn text-pink borPink" type="button">Đặt vé</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
     </section>
 </div>
+<script>
+    var minThumb = document.querySelector(".min-thumb"),
+        maxThumb = document.querySelector(".max-thumb"),
+        minValue = document.querySelector(".min-value"),
+        maxValue = document.querySelector(".max-value"),
+        base = document.querySelector(".range-slider"),
+        values = document.querySelector(".values"),
+        min = Math.floor(parseInt(base.dataset.min) / 1000) * 1000,
+        max = Math.ceil(parseInt(base.dataset.max) / 1000) * 1000,
+        step = parseInt(base.dataset.step) || 1,
+        bar = document.querySelector(".slider-track"),
+        barInner = document.querySelector(".slider-track-filled"),
+        offset,
+        isDown;
 
+    minValue.innerHTML = min;
+    maxValue.innerHTML = max;
+
+    function minMaxThumbMoveStart(e) {
+        if (e.buttons > 1) {
+            return false;
+        }
+
+        if (e.target.classList.contains("min-thumb")) {
+            minThumb.classList.add("min-down");
+        } else if (e.target.classList.contains("max-thumb")) {
+            maxThumb.classList.add("max-down");
+        }
+
+        base.classList.add("move-start");
+        document.addEventListener("mouseup", minMaxThumbMoveEnd);
+        document.addEventListener("mousemove", minMaxThumbMove);
+
+        document.addEventListener("touchstart", minMaxThumbMoveEnd);
+        document.addEventListener("touchmove", minMaxThumbMove);
+    }
+
+    function calculateMinValues(leftPos) {
+        var minVal =
+            leftPos / (bar.offsetWidth - minThumb.offsetWidth) * (max - min) + min;
+        var multi = Math.floor(minVal / step);
+        minVal = step * multi;
+
+        //var minVal = Math.round(leftPos / step) * step + min;
+        minValue.innerHTML = minVal;
+    }
+
+    function calculateMaxValues(leftPos) {
+        var maxVal =
+            leftPos / (bar.offsetWidth - maxThumb.offsetWidth) * (max - min) + min;
+        var multi = Math.floor(maxVal / step);
+        maxVal = step * multi;
+        maxValue.innerHTML = maxVal;
+    }
+
+    function minMaxThumbMove(e) {
+        var mousePosition = {};
+
+        if (base.classList.contains("move-start")) {
+            if (!e.touches) {
+                mousePosition = {
+                    x: e.clientX
+                };
+            } else {
+                mousePosition = {
+                    x: e.touches[0].clientX
+                };
+            }
+
+            var leftPos = Math.max(
+                0,
+                Math.min(
+                    mousePosition.x - base.getBoundingClientRect().left - minThumb.offsetWidth / 2,
+                    bar.offsetWidth - minThumb.offsetWidth
+                )
+            );
+
+            var percentage = leftPos / bar.offsetWidth * 100;
+
+            if (minThumb.classList.contains("min-down")) {
+                var cPos = Math.min(
+                    percentage,
+                    maxThumb.offsetLeft / bar.offsetWidth * 100
+                );
+                minThumb.style.left = cPos + "%";
+                calculateMinValues(cPos * bar.offsetWidth / 100);
+            } else if (maxThumb.classList.contains("max-down")) {
+                var cPos = Math.max(
+                    percentage,
+                    minThumb.offsetLeft / bar.offsetWidth * 100
+                );
+                maxThumb.style.left = cPos + "%";
+                calculateMaxValues(cPos * bar.offsetWidth / 100);
+            }
+
+            calculateFilledTrackWidth();
+        }
+    }
+
+    function calculateFilledTrackWidth() {
+        barInner.style.marginLeft = minThumb.offsetLeft / bar.offsetWidth * 100 + "%";
+        barInner.style.width =
+            (maxThumb.offsetLeft - minThumb.offsetLeft) / bar.offsetWidth * 100 + "%";
+    }
+
+    function minMaxThumbMoveEnd(e) {
+        base.classList.remove("move-start");
+        minThumb.classList.remove("min-down");
+        maxThumb.classList.remove("max-down");
+
+        document.removeEventListener("mouseup", minMaxThumbMoveEnd);
+        document.removeEventListener("mousemove", minMaxThumbMove);
+
+        document.removeEventListener("touchstart", minMaxThumbMoveEnd);
+        document.removeEventListener("touchmove", minMaxThumbMove);
+    }
+
+    function onSliderTrackClick(e) {
+        var distanceMinThumb = Math.hypot(
+            minThumb.getBoundingClientRect().x - parseInt(e.clientX),
+            minThumb.getBoundingClientRect().y - parseInt(e.clientY)
+        );
+
+        var distanceMaxThumb = Math.hypot(
+            maxThumb.getBoundingClientRect().x - parseInt(e.clientX),
+            maxThumb.getBoundingClientRect().y - parseInt(e.clientY)
+        );
+
+        var leftPos = Math.max(
+            0,
+            Math.min(
+                e.clientX - 30 - minThumb.offsetWidth / 2,
+                bar.offsetWidth - minThumb.offsetWidth
+            )
+        );
+
+        var percentage = leftPos / bar.offsetWidth * 100;
+
+        if (distanceMinThumb < distanceMaxThumb) {
+            minThumb.style.left = percentage + "%";
+            calculateMinValues(leftPos);
+        } else {
+            maxThumb.style.left = percentage + "%";
+            calculateMaxValues(leftPos);
+        }
+
+        calculateFilledTrackWidth();
+    }
+
+    bar.addEventListener("mousedown", onSliderTrackClick);
+
+    document.addEventListener("mousedown", minMaxThumbMoveStart);
+    document.addEventListener("touchstart", minMaxThumbMoveStart);
+
+    document.addEventListener("mouseup", minMaxThumbMoveEnd);
+    document.addEventListener("touchend", minMaxThumbMoveEnd);
+
+//document.addEventListener("mousemove", minMaxThumbMove);
+//document.addEventListener("touchmove", minMaxThumbMove);
+
+</script>
 </html>

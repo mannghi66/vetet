@@ -35,7 +35,7 @@
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto ms-4 mb-lg-0">
+          <ul class="navbar-nav me-auto ms-4 mb-lg-0 m-0">
             <li class="nav-item">
               <a class="nav-link" href="#">Trang chủ</a>
             </li>
@@ -46,7 +46,196 @@
               <a class="nav-link hovPink" href="#">Tin tức</a>
             </li>
           </ul>
-          <a href="#" class="btn borPink text-pink fs-14">Tra cứu thông tin vé</a>
+          <button type="button" class="btn borPink text-pink fs-14" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Tra cứu thông tin vé
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header pb-0">
+                  <h5 class="modal-title fs-24" id="exampleModalLabel">Tra cứu thông tin vé</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="text-secondary">Nhập mã vé để tra cứu thông tin</p>
+                  <div class="d-flex">
+                    <input type="text" class="form-control bggreyLight" aria-label="Username"
+                      aria-describedby="basic-addon1">
+                    <button class="btn bgpinkDark text-white w-25 ms-2">Tra cứu vé</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <button type="button" class="btn borPink text-pink fs-14" data-bs-toggle="modal"
+            data-bs-target="#exampleModal2">
+            Tra cứu thông tin vé
+          </button>
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header pb-0">
+                  <h5 class="modal-title fs-24" id="exampleModalLabel">Tra cứu thông tin vé</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="text-secondary">Nhập mã vé để tra cứu thông tin</p>
+                  <div class="d-flex">
+                    <input type="text" class="form-control bggreyLight" aria-label="Username"
+                      aria-describedby="basic-addon1" placeholder="ABCD123456">
+                    <button class="btn bgpinkDark text-white w-25 ms-2">Tra cứu vé</button>
+                  </div>
+                  <p class="fs-14 mt-2">Không tìm thấy thông tin cho mã vé này, vui lòng thử lại</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn borPink text-pink fs-14" data-bs-toggle="modal"
+            data-bs-target="#exampleModal3">
+            Tra cứu thông tin vé
+          </button>
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header pb-0">
+                  <h5 class="modal-title fs-24" id="exampleModalLabel">Tra cứu thông tin vé</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-0" id="book">
+                  <div class="mx-3">
+                    <p class="text-secondary">Nhập mã vé để tra cứu thông tin</p>
+                    <div class="d-flex">
+                      <input type="text" class="form-control bggreyLight" aria-label="Username"
+                        aria-describedby="basic-addon1" placeholder="ABCD123456">
+                      <button class="btn bgpinkDark text-white w-25 ms-2">Tra cứu vé</button>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-pink px-4 position-relative py-2 my-4 bortop d-flex justify-content-between align-items-center">
+                    <div>
+                      <p class="fs-5 mb-1">17:00 - 12/11/2020</p>
+                      <p class="text-secondary mb-1">
+                        <span>Hà Nội</span>
+                        <i class="fas fa-arrow-right mx-2"></i>
+                        <span>Đà Nẵng</span>
+                      </p>
+                    </div>
+                    <p class="text-pink fs-14">Lịch trình chuyến đi</p>
+                  </div>
+                  <div class="mx-3">
+                    <p class="text-pink fs-18 fw-bold mt-2">BẾN XE</p>
+                    <div class="d-flex justify-content-between border-bottom">
+                      <p>
+                        <span>Hà Nội</span>
+                        <i class="fas fa-arrow-right mx-2 fs-14"></i>
+                        <span>Đà Nẵng</span>
+                      </p>
+                      <span class="text-green">180.000đ/vé</span>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p class="text-pink fs-18 fw-bold mt-3">BẾN XE</p>
+                        <p class="mb-3">17:00 (Giường)</p>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="text-pink fs-18 fw-bold mt-3">ĐIỂM LÊN XE</p>
+                        <p class="mb-3">Văn phòng Hà Nội</p>
+                      </div>
+                    </div>
+                    <p class="text-pink fs-18 fw-bold pt-3 border-top">THÔNG TIN KHÁCH HÀNG</p>
+                    <div class="row mb-3">
+                      <div class="col-md-3 text-secondary">Tên</div>
+                      <div class="col-md-9">Lê Tuấn Linh</div>
+                      <div class="col-md-3 text-secondary my-2">Điện thoại</div>
+                      <div class="col-md-9 my-2">0123456789</div>
+                      <div class="col-md-3 text-secondary">Email</div>
+                      <div class="col-md-9">tuanlinh@anvui.vn</div>
+                    </div>
+                    <p class="text-pink fs-18 fw-bold pt-3 border-top">THÔNG TIN THANH TOÁN</p>
+                    <div class="row">
+                      <div class="col-md-3 text-secondary">Tên</div>
+                      <div class="col-md-9">Lê Tuấn Linh</div>
+                      <div class="col-md-3 text-secondary my-2">Điện thoại</div>
+                      <div class="col-md-5 my-2">0123456789</div>
+                      <div class="col-md-4 my-2 text-green d-flex justify-content-end">Đã thanh toán</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn borPink text-pink fs-14" data-bs-toggle="modal"
+            data-bs-target="#exampleModal4">
+            Tra cứu thông tin vé
+          </button>
+          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"><img src="img/arrowleft.png" alt="" class="me-2"> Lịch trình chuyến đi</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="book">
+                  <div class="px-3">
+                    <ul class="timeline-with-icons mb-0">
+                        <li class="timeline-item pb-4">
+                            <span class="timeline-icon">
+                                <img src="img/locationblack.png" alt="">
+                            </span>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <p class="my-0"><span class="fs-18">06:00-</span><span class="text-secondary">27/11</span></p>
+                                </div>
+                                <div class="col-md-8 ps-4">
+                                    <p class="fs-18 mb-0">Châu Đốc</p>
+                                    <p class="text-secondary my-0">69 Phăn Văn Vàng, Châu Phú A, TP.
+                                        Châu Đốc</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-item pb-4">
+
+                            <span class="timeline-icon">
+                                <img src="img/locationblack.png" alt="">
+                            </span>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <p class="my-0"><span class="fs-18">06:00-</span><span class="text-secondary">27/11</span></p>
+                                </div>
+                                <div class="col-md-8 ps-4">
+                                    <p class="fs-18 mb-0">Vịnh Tre</p>
+                                    <p class="text-secondary my-0">Vịnh Tre - Châu Đốc</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="timeline-item pb-4">
+
+                            <span class="timeline-icon">
+                                <img src="img/locationblack.png" alt="">
+                            </span>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <p class="my-0"><span class="fs-18">06:00-</span><span class="text-secondary">27/11</span></p>
+                                </div>
+                                <div class="col-md-8 ps-4">
+                                    <p class="fs-18 mb-0">Lộ Tẻ - Tri Tôn</p>
+                                    <p class="text-secondary my-0">VP Lộ Tẻ: Ấp Bình Phú 1, xã Bình Hoà,
+                                        Châu Thành An...</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </nav>
@@ -102,8 +291,9 @@
               <span class="input-group-text bg-white"><img src="img/location.png" alt="" class="mx-2"></span>
               <input type="text" class="form-control" placeholder="Nơi đến" aria-label="Server">
               <div class="dropdown">
-                <button class="btn dropdown-toggle startbut bg-white text-secondary rounded-0 lineLeft position-relative  " type="button"
-                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button
+                  class="btn dropdown-toggle startbut carlen bg-white text-secondary rounded-0 lineLeft position-relative  "
+                  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   <img src="img/calendar.png" alt="" class="mx-2"> Nơi đi
                 </button>
                 <div class="dropdown-menu py-3">
@@ -126,20 +316,20 @@
     </section>
     <section>
       <div class="container-xxl">
-        <div class="row topvc">
-          <div class="col-md-4">
+        <div class="row topvc justify-content-center">
+          <div class="col-lg-4 col-md-6">
             <div class="vourcher position-relative px-4 text-white">
               <p class="fs-4 mb-0">VÉ GIÁ RẺ</p>
               <p class="fs-2">SUM HỌP GIA ĐÌNH</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4 col-md-6">
             <div class="vourcher vc2 position-relative px-4 text-white">
               <p class="fs-3 mb-0">VÉ XE TẾT <br>ƯU ĐÃI</p>
               <p class="fs-80 lh-text">50%</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4 col-md-6">
             <div class="vourcher vc3 position-relative px-4 text-white">
               <p class="fs-56 lh-text text-end">GIÁ RẺ</p>
               <p class="fs-3 mb-0 text-end">ƯU ĐÃI RIÊNG <br>HỌC SINH, SINH VIÊN</p>
@@ -370,7 +560,7 @@
         </div>
       </div>
       <p class="border-top pt-3">Phương thức thanh toán</p>
-      <ul class="list-unstyled d-flex pb-4">
+      <ul class="list-unstyled d-flex pb-4 overflow-auto">
         <li><a href="#" class="me-5"><img src="img/vnpay.png" alt=""></a></li>
         <li><a href="#" class="me-5"><img src="img/zalopay.png" alt=""></a></li>
         <li><a href="#" class="me-5"><img src="img/viettelpay.png" alt=""></a></li>
